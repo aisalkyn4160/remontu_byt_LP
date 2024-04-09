@@ -1,0 +1,29 @@
+.adv-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 19px 24px;
+}
+.adv-item{
+    padding: 20px;
+    background: rgba(246, 246, 246, 1);
+    border: 1px solid rgba(85, 118, 137, 0.41);
+}
+.adv-item p{
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    .adv-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 650px) {
+    .adv-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 7px;
+    }
+    .adv-item{
+        padding: 17px;
+    }
+}

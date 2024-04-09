@@ -1,0 +1,227 @@
+@import url('./header-style.css');
+@import url('./promo-style.css');
+@import url('./advantages-style.css');
+@import url('./services-style.css');
+@import url('./process-style.css');
+@import url('./about-style.css');
+@import url('./feedback-style.css');
+@import url('./footer-style.css');
+
+
+/* ------------------------------------------fonts-styles------------------------------------------ */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+/* -------------------------------------------reset-styles------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none; color: inherit;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+
+h1,h2, h3, h4, h5, h6{font-style: inherit;}
+
+/* -------------------------------------------main-styles------------------------------------------- */
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Gilroy', sans-serif;
+	background: rgba(255, 255, 255, 1);
+	font-size: 18px;
+	line-height: 1.2;
+	color: rgba(42, 42, 45, 1);
+	
+}
+body.no-scroll{
+	overflow: hidden;	
+}
+.layout{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+
+}
+
+header{
+	flex-shrink: 0;
+}
+
+main{
+	flex-grow: 1;
+}
+footer{
+	flex-shrink: 0;
+}
+
+.container{
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+	overflow: hidden;
+}
+
+h1{
+	font-size: 52px;
+	font-weight: 700;
+	max-width: 540px;
+	margin-bottom: 17px;
+}
+h2{
+	font-size: 52px;
+	font-weight: 600;
+}
+h2>span{
+	color: rgba(41, 132, 222, 1);
+}
+h3{
+	font-size: 24px;
+	font-weight: 600;
+}
+h6{
+	font-size: 15px;
+	margin-bottom: 9px;
+}
+button{
+	padding: 19px 42px;
+	color: rgba(255, 255, 255, 1);
+	font-weight: 600;
+	text-align: center;
+	background: rgba(41, 132, 222, 1);
+	font-size: 18px;
+	white-space: nowrap;
+}
+
+button:hover{
+	background: rgba(84, 162, 238, 1);
+	transition: all 0.5s ease;
+}
+section{
+	padding: 85px 0;
+}
+.section-ttl{
+	margin-bottom: 30px;
+}
+.section-ttl>span{
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 13px 19px;
+	background: rgba(233, 233, 233, 1);
+	width: max-content;
+	margin-bottom: 20px;
+}
+.section-ttl>span b{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: rgba(41, 132, 222, 1);
+	margin-right: 10px;
+}
+
+@media (max-width: 590px) {
+	body{
+		font-size: 14px;
+	}
+	h1{
+		font-size: 30px;
+	}
+	h2{
+		font-size: 32px;
+	}
+	button{
+		font-size: 16px;
+		padding: 15px 34px;
+	}
+	section{
+		padding: 45px 0;
+	}
+	.section-ttl{
+		margin-bottom: 20px;
+	}
+}

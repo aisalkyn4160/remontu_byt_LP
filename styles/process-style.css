@@ -1,0 +1,129 @@
+.process{
+    background: rgba(241, 243, 247, 1);
+}
+.process-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.process-wrapper :nth-child(1),
+.process-wrapper :nth-child(2),
+.process-wrapper :nth-child(3),
+.process-wrapper :nth-child(4) {
+    grid-column: span 1;
+}
+.process-wrapper :nth-child(5),
+.process-wrapper :nth-child(6),
+.process-wrapper :nth-child(7) {
+    grid-column: span 2;
+    margin-left: -50%;
+} 
+.process-wrapper :nth-child(5){
+    grid-column: 2/3;
+}
+.process-wrapper :nth-child(6){
+    grid-column: 3/4;
+}
+.process-wrapper :nth-child(7){
+    grid-column: 4/5;
+} 
+.process-wrapper :nth-child(8){
+    grid-column: 2 / 3;
+}
+.process-wrapper :nth-child(9){
+    grid-column: 3 / 4;
+}
+
+.process-item{
+    width: 260px;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px 10px 20px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+.process-item::after,
+.process-item::before{
+    content: '';
+    display: block;
+    border: 20px solid transparent; 
+    border-left: 15px solid rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 50%;
+    right: -28px;
+    transform: translateY(-50%);
+}
+.process-item::before{
+    border-left: 20px solid rgba(241, 243, 247, 1);
+    left: -10px;
+}
+.process-item p{
+    font-weight: 500;
+}
+.process-item span{
+    color:rgba(41, 132, 222, 1);
+    font-weight: 500;
+}
+
+.first, .last{
+    background: rgba(41, 132, 222, 1);
+    color: rgba(255, 255, 255, 1);
+}
+.first span, .last span{
+    color: rgba(255, 255, 255, 1);
+}
+.first::before{
+    display: none;
+}
+.first::after{
+    border-left: 15px solid rgba(41, 132, 222, 1);
+}
+.last::after{
+    display: none;
+}
+
+@media (max-width: 1150px) {
+    .process-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .process-wrapper :nth-child(7),
+    .process-wrapper :nth-child(6),
+    .process-wrapper :nth-child(5) {
+        margin-left: 0%;
+    }
+    .process-wrapper :nth-child(5),
+    .process-wrapper :nth-child(8){
+        grid-column: 2/3;
+    }
+    .process-wrapper :nth-child(6),
+    .process-wrapper :nth-child(9){
+        grid-column: 3/4;
+    }
+    .process-wrapper :nth-child(7){
+        grid-column: 1/2;
+    }
+    .process-item{
+        width: 100%;
+    }
+   
+}
+
+@media (max-width: 750px) {
+    .process-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .process-wrapper :nth-child(3),
+    .process-wrapper :nth-child(5),
+    .process-wrapper :nth-child(9) {
+        grid-column: 1/2;
+    }
+  
+    .process-wrapper :nth-child(6){
+        grid-column: 2/3;
+    }
+
+}

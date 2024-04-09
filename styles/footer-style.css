@@ -1,0 +1,118 @@
+.footer{
+    background: rgba(30, 47, 65, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 75px 0 45px;
+    font-size: 15px;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-contacts li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.footer-contacts li>span{
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: rgba(48, 67, 86, 1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-contacts p{
+    max-width: 255px;
+}
+.footer-contacts .mail-link{
+    color: rgba(0, 181, 26, 1);
+    text-decoration: underline;
+}
+.footer-contacts .phone-link span{
+    color: rgba(134, 161, 188, 1);
+}
+.footer-contacts .telegram,
+.footer-contacts .whatsapp{
+    width: 50px;
+    height: 50px;
+}
+.footer-nav{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.footer .nav-menu ul{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer .services-list li{
+    margin-bottom: 19px;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-bottom p{
+    color: rgba(203, 202, 209, 1);
+}
+
+.developed{
+    display: flex;
+    gap: 40px;
+}
+.developed a{
+    display: block;
+    margin-top: 6px;
+    text-decoration: underline;
+}
+
+@media (max-width: 950px) {
+    .footer-top{
+        flex-direction: column;
+    }
+    .footer-contacts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-contacts li{
+        width: 50%;
+    }
+    .footer-nav{
+        width: 70%;
+    }
+}
+
+@media (max-width: 865px) {
+    .footer-bottom{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 740px) {
+    .footer{
+        padding-top: 45px;
+    }
+    .footer .logo{
+        width: 107px;
+        height: 107px;
+    }
+    .footer-contacts li{
+        width: 100%;
+    }
+    .footer-nav{
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
