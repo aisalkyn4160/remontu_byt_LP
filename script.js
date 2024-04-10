@@ -34,3 +34,19 @@ navMenuLi.forEach(item => {
     })
 })
 
+// ----------------------------------popup--------------------------------
+const popup = document.querySelector('.popup')
+const popupShowBtns = document.querySelectorAll('.service-item button')
+const closeFormBtn = document.querySelector('.close-form')
+
+popupShowBtns.forEach(item => {
+    item.addEventListener('click', () => {
+        popup.classList.add('show-popup')
+        document.body.classList.add('no-scroll')
+    })
+})
+
+closeFormBtn.addEventListener('click', () => {
+    popup.classList.remove('show-popup')
+    document.body.classList.remove('no-scroll')
+})

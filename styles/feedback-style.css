@@ -28,36 +28,6 @@
     margin-top: 100px;
 }
 
-.feedback-form input,
-.feedback-form textarea{
-    width: 100%;
-    height: 56px;
-    padding: 18px 24px;
-    border: 1px solid rgba(236, 236, 236, 1);
-    background: rgba(242, 242, 242, 1);
-    font-size: 14px;
-    color: rgba(113, 113, 113, 1);
-}
-.feedback-form textarea{
-    resize: none;
-}
-.feedback-form input:focus,
-.feedback-form textarea:focus{
-    border: 1px solid rgba(61, 118, 186, 1);
-    background: rgba(251, 251, 251, 1);
-
-}
-.feedback-form span{
-    font-size: 12px;
-}
-.feedback-form span a{
-    color: rgba(41, 132, 222, 1);
-    text-decoration: underline;
-}
-.feedback-form button{
-    font-size: 16px;
-}
-
 @media (max-width: 970px) {
     .feedback{
         background-size: cover;
@@ -72,5 +42,6 @@
     }
     .feedback-form form{
         margin-top: 0;
+        max-width: 462px;
     }
 }
