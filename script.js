@@ -11,6 +11,7 @@ burger.addEventListener('click', () => {
     headerMenu.style.right = '0'
     headerMenu.style.transition = 'all 0.5s ease-in-out';
     transparentBg.style.right = '0'
+    transparentBg.style.background = 'rgba(0, 0, 0, 0.34)'
     document.body.classList.add('no-scroll')
     container.style.overflow = 'visible'
 

@@ -233,7 +233,6 @@ section{
 	gap: 20px;
 	padding: 56px 48px;
 	position: relative;
-	text-align: center;
 }
 .popup form .close-form{
 	position: absolute;
@@ -296,9 +295,5 @@ form button{
 	}
 	.section-ttl{
 		margin-bottom: 20px;
-	}
-	.popup form{
-		padding: 56px 20px 20px; 
-		gap: 10px;
 	}
 }

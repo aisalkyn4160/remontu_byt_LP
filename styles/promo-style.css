@@ -1,7 +1,7 @@
 .promo{
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-position: center bottom;
     padding: 170px 0 15px;
     color: rgba(255, 255, 255, 1);
     position: relative;
@@ -46,6 +46,7 @@
 @media (max-width: 590px) {
     .promo{
         padding-top: 176px;
+        padding-bottom: 10px;
     }
     .promo-info p{
         padding: 10px;

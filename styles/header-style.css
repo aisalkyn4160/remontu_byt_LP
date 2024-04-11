@@ -24,12 +24,12 @@
     height: 100%;
 }
 .transparent-bg{
-    background: rgba(0, 0, 0, 0.34);
+    background: transparent;
     width: 100vw;
     height: 100vh;
     position: absolute;
     top: 0;
-    right: -200%;
+    right: -400%;
     transition: all 0.5s ease;
 }
 .burger{
@@ -124,7 +124,7 @@
     transition: all 0.5s ease;
 }
 .header button{
-    padding: 13px 28px;
+    padding: 11px 28px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,6 +133,7 @@
     background: rgba(241, 248, 255, 0.63);
     margin-left: 42px;
     font-size: 20px;
+    line-height: 1;
     font-weight: 600;
     color: rgba(22, 21, 51, 1);
 }
@@ -174,7 +175,6 @@
         top: 0;
         right: -200%;
         align-items: flex-start;
-        overflow-y: auto;
    }
    .header-nav{
         order: -1;
@@ -212,5 +212,8 @@
 @media (max-width: 550px) {
     .header-menu{
         width: 280px;
+    }
+    .header .nav-menu{
+        font-size: 18px;
     }
 }
